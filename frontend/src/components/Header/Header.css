@@ -1,0 +1,53 @@
+header {
+  padding: 0 10%;
+}
+
+header .navbar {
+  min-height: 5em;
+  max-height: 5em;
+}
+
+header h1 {
+  color: white;
+}
+
+header {
+  box-shadow: 0 4px 2px -2px gray;
+}
+
+header h2 {
+  padding-bottom: 0.3em;
+}
+
+header h4 {
+  font-size: 0.7em;
+}
+
+header .datetime-container {
+  font-family: 'Roboto Flex', sans-serif;
+  color: white;
+}
+
+header .dropdown svg {
+  color: white;
+}
+
+header .nav-btn-label {
+  margin: 0;
+  color: white;
+}
+
+header .dropdown-toggle::after {
+  display: none; 
+}
+
+header .dropdown-menu[data-bs-popper] {
+  left: -150px;
+  min-width: 12em;
+}
+
+@media (max-width: 770px) {
+  header .datetime-container {
+    display: none;
+  }
+}

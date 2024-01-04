@@ -1,0 +1,22 @@
+.weather-container {
+  padding: 10%;
+  text-align: center;
+  max-width: 35em;
+}
+
+.weather-container img {
+  width: 10em;
+  height: auto;
+}
+
+.weather-container p {
+  margin-bottom: 0;
+}
+
+.weather-header, .weather-temp {
+  font-size: 2em;
+}
+
+.weather-info {
+  color: #9C9C9C;
+}

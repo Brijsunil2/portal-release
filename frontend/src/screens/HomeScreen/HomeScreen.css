@@ -1,0 +1,23 @@
+.homescreen-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.homescreen-container .primary-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 2em 0 10em 0;
+  margin: 0;
+  align-items: center;
+  min-width: 20em;
+  max-width: 60em;
+}
+
+.authsection-container {
+  min-width: 20em;
+  max-width: 30em;
+  background-color:#f8faff;
+  border-radius: 0.5em;
+}

@@ -1,0 +1,12 @@
+.loadingscreen-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.loadingscreen-container .spinner-border {
+  width: 3em;
+  height: 3em;
+}

@@ -1,0 +1,6 @@
+.div-separator {
+  width: 0;
+  height: 0;
+  border-left: 100vw solid transparent;
+  margin-top: -5em;
+}

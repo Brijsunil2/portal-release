@@ -1,0 +1,24 @@
+.appsection-container {
+  width: 100%;
+  height: 100%;
+  padding: 1em 2em;
+}
+
+/* #E2FDFF */
+.appentry-container {
+  text-align: center;
+  background-color: #f8faff;
+  padding: 0.5em;
+  margin: 0.5em;
+  height: 100%;
+}
+
+.appsection-container h2 {
+  color: black;
+  font-size: 1.5em;
+  padding-bottom: 0.5em;
+}
+
+.appentry-container h3 {
+  color: black;
+}

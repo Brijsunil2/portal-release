@@ -1,0 +1,35 @@
+.authsection-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 2em;
+}
+
+.authsection-container label {
+  width: 5rem;
+}
+
+.authsection-container .btn-group {
+  align-self: center;
+}
+
+.authsection-container form {
+  padding: 0 0.5rem;
+}
+
+.authsection-container button {
+  float: right;
+}
+
+.authsection-container .spinner-border {
+  width: 1em;
+  height: 1em;
+}
+
+.auth-h2 {
+  color: black;
+  font-size: 1.5rem;
+  margin: 1em 10px;
+  text-align: center;
+}
