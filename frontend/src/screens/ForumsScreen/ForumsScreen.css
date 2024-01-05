@@ -1,0 +1,14 @@
+.forumsscreen-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.forumsscreen-container .primary-container {
+  padding: 2em 0 10em 0;
+  margin: 0;
+  align-items: center;
+  width: 100%;
+  min-width: 20em;
+  max-width: 60em;
+}

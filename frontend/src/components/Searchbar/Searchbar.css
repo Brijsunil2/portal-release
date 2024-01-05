@@ -1,0 +1,23 @@
+.searchbar-container .form-control {
+  border-radius: 0;
+  display: block;
+}
+
+.searchbar-container .btn {
+  border-radius: 0;
+}
+
+.searchbar-container .clear-x {
+  margin: auto 10px;
+  width: 14px;
+  height: 14px;
+}
+
+.searchbar-container .clear-x:hover {
+  color: red;
+}
+
+.searchbar-container .search-icon {
+  height: 100%;
+  margin: 0px 10px;
+}

@@ -11,7 +11,7 @@ const AppSection = () => {
         <Container className="appentries-container">
           <Row>
             <Col className="my-2" md>
-            <AppEntry appName="Forums" appIcon={<MdForum />} appDesc="A platform where users can create forum groups to communicate, ask questions or share any concerns."/>
+            <AppEntry appName="Forums" link="/forums" appIcon={<MdForum />} appDesc="A platform where users can create forum groups to communicate, ask questions or share any concerns."/>
             </Col>
             <Col className="my-2" md>
             </Col>

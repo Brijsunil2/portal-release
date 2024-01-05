@@ -1,0 +1,67 @@
+.forumssection-container {
+  width: 100%;
+  height: 100%;
+}
+
+.create-forum-spinner {
+  width: 1em;
+  height: 1em;
+}
+
+.forumssection-container .btn {
+  border-radius: 0;
+}
+
+.forumentries-container {
+  width: 100%;
+}
+
+.forumentry-container {
+  border-top: solid rgb(245, 245, 245) 1px;
+  border-bottom: solid rgb(245, 245, 245) 1px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.forumentry-container:nth-child(even) {
+  background-color: rgb(247, 247, 247);
+}
+
+.forumentry-container .forumentry-title {
+  color: rgb(71, 71, 219);
+  font-weight: bold;
+  font-size: 1em;
+  margin: 0;
+}
+
+.forumentry-container .forumentry-desc {
+  color: rgb(161, 161, 161);
+  font-size: 0.8em;
+  margin: 0;
+}
+
+.forumentry-container .forumentry-author {
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.forumentry-container .forumentry-datecreated {
+  font-size: 0.8em;
+}
+
+.forumentry-container .forumentry-numposts {
+  color: rgb(189, 189, 189);
+  font-size: 0.8em;
+}
+
+.forumentry-col-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.forumentry-col-2, .forumentry-col-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

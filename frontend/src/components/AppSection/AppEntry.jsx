@@ -2,10 +2,10 @@ import { useNavigate } from "react-router-dom";
 import { Card, Button } from "react-bootstrap";
 import { IoMdArrowForward } from "react-icons/io";
 
-const AppEntry = ({ appName, appIcon, appDesc }) => {
+const AppEntry = ({ appName, link, appIcon, appDesc }) => {
   const navigate = useNavigate();
   const routeChange = () => {
-    navigate("/" + appName.toLowerCase());
+    navigate(link.toLowerCase());
   };
 
   return (
@@ -16,7 +16,7 @@ const AppEntry = ({ appName, appIcon, appDesc }) => {
         <Card.Text>
           {appDesc}
         </Card.Text>
-        <Button><IoMdArrowForward /></Button>
+        <Button onClick={routeChange}><IoMdArrowForward /></Button>
       </Card.Body>
     </Card>
   );
