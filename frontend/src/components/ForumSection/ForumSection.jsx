@@ -54,8 +54,8 @@ const ForumSection = () => {
   useEffect(() => {
     if (!init.current) {
       init.current = true;
-      fetchForum();
       console.log(process.env.REACT_APP_BACKEND);
+      fetchForum();
     }
 
     socket.on(`forumReplyUpdate/${id}`, (data) => {
