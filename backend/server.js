@@ -49,7 +49,7 @@ if (process.env.NODE_ENV === "production") {
 
 io.on("connection", (socket) => {
   console.log(`Client with id ${socket.id} has connected.`);
-  socket.on("forumReply", (reply) => socketOnForumReply(socket, reply));
+  socket.on("forumReply", (reply) => socketOnForumReply(io, reply));
   socket.on("disconnect", socketOnDisconnect);
 });
 

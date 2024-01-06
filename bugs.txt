@@ -1,4 +1,7 @@
 List of Found Bugs:
-
-- Issue where realtime reply updates are not going through to all users.
 - Issue where no user feedback for Forums page will not show up when no forums are loaded on the initial page load.
+
+
+To Do:
+- When a post is made make sure name is displayed and post can only be sent when user is auth.
+- Add go back button from forum to forums page.

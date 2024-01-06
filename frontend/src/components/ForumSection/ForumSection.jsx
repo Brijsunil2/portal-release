@@ -65,7 +65,7 @@ const ForumSection = () => {
     });
 
     return () => socket.off("forumReplyUpdate/" + id);
-  }, [fetchForum, id, socket, dispatch, setShowModal, forumData, setForumData]);
+  }, [fetchForum, id, socket, dispatch, setShowModal, forumData, setForumData, postReplys]);
 
   return (
     <>
