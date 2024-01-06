@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
 import { Button, Col, Form, Row, Spinner } from "react-bootstrap";
 import { useCreateForumMutation } from "../../slices/forumsApiSlice";
 import * as formik from "formik";
@@ -7,6 +8,7 @@ import * as yup from "yup";
 
 const ForumCreateForm = () => {
   const [validate, setValidate] = useState(true);
+  const { userInfo } = useSelector((state) => state.auth);
 
   const { Formik } = formik;
 
@@ -25,8 +27,8 @@ const ForumCreateForm = () => {
     try {
       const res = await createForum({
         ...values,
-        author: "Joe2323",
-        authorID: "1111",
+        author: userInfo.username,
+        authorID: userInfo._id,
       }).unwrap();
 
       if (res) {

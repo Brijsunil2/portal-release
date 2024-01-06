@@ -22,3 +22,7 @@
 .appentry-container h3 {
   color: black;
 }
+
+.appentry-container .btn {
+  margin-top: 1em;
+}

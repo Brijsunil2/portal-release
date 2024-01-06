@@ -1,10 +1,12 @@
 import { useState } from "react";
+import { useSelector } from "react-redux";
 import { Button, Col, Form, Row, Spinner } from "react-bootstrap";
 import * as formik from "formik";
 import * as yup from "yup";
 
 const ForumCreatePost = ({ socket, forumID }) => {
   const [validate, setValidate] = useState(true);
+  const { userInfo } = useSelector((state) => state.auth);
 
   const { Formik } = formik;
 
@@ -17,8 +19,8 @@ const ForumCreatePost = ({ socket, forumID }) => {
 
     socket.emit("forumReply", {
       msg: values.msg,
-      author: "Joe2323",
-      authorID: "1111",
+      author: userInfo.username,
+      authorID: userInfo._id,
       forumID: forumID,
     });
   };
