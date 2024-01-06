@@ -72,7 +72,6 @@ const ForumsSection = () => {
           btnToolbar: [1],
         });
       }
-      console.log("heres")
       console.log(err?.data?.message || err.error);
     }
   };
@@ -110,13 +109,20 @@ const ForumsSection = () => {
             </Row>
           </Container>
           <Container className="forumentries-container">
-            {titleQuery !== "" && (
+            {titleQuery !== "" ? (
               <h3>
                 {forums.length > 0
                   ? `Results for ${titleQuery}`
                   : "No forums found"}
               </h3>
-            )}
+            ) : (
+              <h3>
+                {
+                  forums.length === 0 && "Server is unable to find any forums"
+                }
+              </h3>
+            )
+          }
             {forums.length > 0 && (
               <Container className="text-center" style={{ fontWeight: "bold" }}>
                 <p>

@@ -1,7 +1,4 @@
-List of Found Bugs:
-- Issue where no user feedback for Forums page will not show up when no forums are loaded on the initial page load.
-
-
-To Do:
+Quality of Life Improvments to Impliment:
 - When a post is made make sure name is displayed and post can only be sent when user is auth.
 - Add go back button from forum to forums page.
+- Order system for forums and post

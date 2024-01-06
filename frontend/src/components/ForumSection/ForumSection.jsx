@@ -51,7 +51,6 @@ const ForumSection = () => {
     }
   }, [id, getForum, navagate]);
 
-  
   useEffect(() => {
     if (!init.current) {
       init.current = true;
@@ -60,12 +59,21 @@ const ForumSection = () => {
 
     socket.on(`forumReplyUpdate/${id}`, (data) => {
       dispatch(postReplys(data));
-      setForumData({...forumData, posts: [...forumData.posts, data]})
+      setForumData({ ...forumData, posts: [...forumData.posts, data] });
       setShowModal(false);
     });
 
     return () => socket.off("forumReplyUpdate/" + id);
-  }, [fetchForum, id, socket, dispatch, setShowModal, forumData, setForumData, postReplys]);
+  }, [
+    fetchForum,
+    id,
+    socket,
+    dispatch,
+    setShowModal,
+    forumData,
+    setForumData,
+    postReplys,
+  ]);
 
   return (
     <>
@@ -117,6 +125,7 @@ const ForumSection = () => {
                 />
               ))
             )}
+            {forumData.posts.length === 0 && <h3>Be the first to post!</h3>}
           </Container>
         </div>
       )}
