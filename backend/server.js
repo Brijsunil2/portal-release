@@ -26,6 +26,7 @@ const io = new Server(httpServer, {
   cors: {
     origin: true,
     methods: ["GET", "POST"],
+    credentials: true
   },
 });
 
