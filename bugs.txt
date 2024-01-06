@@ -1,5 +1,4 @@
 List of Found Bugs:
 
-- Issue where components for the Forums component has conflicting styles.
 - Issue where realtime reply updates are not going through to all users.
 - Issue where no user feedback for Forums page will not show up when no forums are loaded on the initial page load.
