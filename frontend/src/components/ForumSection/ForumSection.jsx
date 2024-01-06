@@ -54,7 +54,6 @@ const ForumSection = () => {
   useEffect(() => {
     if (!init.current) {
       init.current = true;
-      console.log(process.env.REACT_APP_BACKEND);
       fetchForum();
     }
 
