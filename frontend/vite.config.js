@@ -8,7 +8,7 @@ export default defineConfig(({ mode }) => {
       port: 3000,
       proxy: {
         "/api": {
-          target: "https://portal-64si.onrender.com",
+          target: "http://localhost:5000",
           changeOrigin: true,
         },
       },
