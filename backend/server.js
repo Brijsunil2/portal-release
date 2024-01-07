@@ -26,7 +26,7 @@ const io = new Server(httpServer, {
   cors: {
     origin: true,
     methods: ["GET", "POST"],
-    credentials: true
+    credentials: true,
   },
 });
 
@@ -38,15 +38,15 @@ app.use(cookieParser());
 app.use("/api/users", userRoutes);
 app.use("/api/forums", forumRoutes);
 
-// if (process.env.NODE_ENV === "production") {
-//   const __dirname = path.resolve();
-//   app.use(express.static(path.join(__dirname, "frontend/dist")));
-//   app.get("*", (req, res) =>
-//     res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"))
-//   );
-// } else {
-app.get("/", (req, res) => res.send("Portal Server Online"));
-// }
+if (process.env.NODE_ENV === "production") {
+  const __dirname = path.resolve();
+  app.use(express.static(path.join(__dirname, "frontend/dist")));
+  app.get("*", (req, res) =>
+    res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"))
+  );
+} else {
+  app.get("/", (req, res) => res.send("Portal Server Online"));
+}
 
 io.on("connection", (socket) => {
   console.log(`Client with id ${socket.id} has connected.`);
