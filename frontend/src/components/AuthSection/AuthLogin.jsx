@@ -96,7 +96,7 @@ const AuthLogin = () => {
                   <span className="visually-hidden">Loading...</span>
                 </Spinner>
               ) : (
-                "Sign-up"
+                "Login"
               )}
             </Button>
           </Form>
