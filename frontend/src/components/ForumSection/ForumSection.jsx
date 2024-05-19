@@ -10,7 +10,7 @@ import ForumPostEntry from "./ForumPostEntry.jsx";
 import { postReplys } from "../../slices/ioApiSlice.js";
 
 import socketIO from "socket.io-client";
-const socket = socketIO();
+const socket = socketIO(process.env.REACT_APP_BACKEND);
 
 const ForumSection = () => {
   const { id } = useParams();
