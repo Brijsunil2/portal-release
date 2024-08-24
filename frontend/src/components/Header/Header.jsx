@@ -29,15 +29,15 @@ const Header = () => {
   return (
     <header>
       <Navbar>
-          <Col>
-            <Navbar.Brand className="d-flex align-items-center" href="/">
-              <h1>Portal</h1>
-            </Navbar.Brand>
-          </Col>
-          <Col>
-            <DateTimeSection />
-          </Col>
-          <Col className="d-flex justify-content-end">
+        <Col>
+          <Navbar.Brand className="d-flex align-items-center" href="/">
+            <h1>Portal</h1>
+          </Navbar.Brand>
+        </Col>
+        <Col>
+          <DateTimeSection />
+        </Col>
+        <Col className="d-flex justify-content-end">
           {userInfo && (
             <>
               <Nav>
@@ -78,7 +78,7 @@ const Header = () => {
               </Nav>
             </>
           )}
-          </Col>
+        </Col>
       </Navbar>
     </header>
   );
